@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 editor.putString("user2", null);
                 editor.apply();
 
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Login.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.putExtra("EXIT", true);
                 startActivity(intent);
