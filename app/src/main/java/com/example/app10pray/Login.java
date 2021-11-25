@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
             finishActivity(0);
         }
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         etUsuario = (EditText) findViewById(R.id.etUsuario);
         etContra = (EditText) findViewById(R.id.etContra);
@@ -189,6 +189,8 @@ public class Login extends AppCompatActivity {
 */
                 Login.this.startActivity ( intentReg );
             } else {
+                progressBar.setVisibility(View.INVISIBLE);
+                tvRegistrar.setVisibility ( View.VISIBLE );
                 tvRegistrar.setText ( "Acceso denegado" );
                 etUsuario.setText ( "" );
                 etContra.setText ( "" );
